@@ -1,26 +1,33 @@
 /*!
  * Custom CSS
  * responsive css video https://youtu.be/UUjNEMXZA-k
+ * <600px, 601, 768, 992, 1200
  */
  html {
     font-size: 62.5%;
  }
 
  body {
-    background-color: #111;
-    color: #fff;
-    text-align: center;
+    background-image: url("images/beach-229k.jpg");
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    color: #111;
+    text-align: left;
  }
 
  .wrapper-main {
     /* width: 1000px; */
     padding: 100px;
     margin: 0 auto;
-    border: 4px solid blue;
+    /* border: 4px solid blue; */
  }
 
  h1 {
     font-size: 9.2rem;
+ }
+
+ h2 {
+    font-size: 4rem;
  }
 
  p {
@@ -29,40 +36,40 @@
 
  a {
     display: block;
+    background-color: black;
+    color: white;
     width: fit-content;
     border: 2px solid #fff;
     padding: 10px 20px;
-    margin:  20px auto 0;
+    margin:  4px;
     font-size: 2.6rem;
  }
 
 @media (max-width: 600px) and (orientation: landscape) {
     .wrapper-main {
         width: 100%;
-        background-color: orange;
+        /* background-image: url("images/beach-55k.jpg"); */
     }
 }
 
 @media (min-width: 601px) and (orientation: landscape) {
     .wrapper-main {
         width: 100%;
-        background-color: red;
+        /* background-image: url("images/beach-55k.jpg"); */
     }
 }
-
-/* <600px, 601, 768, 992, 1200 */
 
 @media (min-width: 768px) and (orientation: landscape) {
     .wrapper-main {
         width: 100%;
-        background-color: green;
+        /* background-image: url("images/beach-55k.jpg"); */
     }
 }
 
 @media (min-width: 992px) and (orientation: landscape) {
     .wrapper-main {
         width: 100%;
-        background-color: purple;
+        /* background-image: url("images/beach-55k.jpg"); */
     }
 }
 
@@ -72,3 +79,50 @@
         background-color: aqua;
     }
 } */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    /* background-color: #333; */
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+display: none;
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.first-div {
+    width: 50%;
+    float: left;
+}
+
+.next-div {
+    float: left;
+}
